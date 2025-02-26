@@ -7,12 +7,14 @@
     "build": "bun build src/http/server.ts",
     "start": "NODE_ENV=production bun src/http/server.ts",
     "test": "bun test",
-    "generate": "drizzle-kit generate"
+    "generate": "drizzle-kit generate",
+    "migrate": "bun src/db/index.ts"
   },
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
-    "drizzle-kit": "^0.30.5"
+    "drizzle-kit": "^0.30.5",
+    "pg": "^8.13.3"
   },
   "peerDependencies": {
     "typescript": "^5"
